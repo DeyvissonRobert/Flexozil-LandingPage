@@ -5,7 +5,7 @@ function iniciarContador() {
         let minutos = Math.floor(tempoRestante / 60);
         let segundos = tempoRestante % 60;
         let contador = document.getElementById("contador");
-        
+
         contador.innerText = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`;
 
         // Quando faltar 5 minutos, mudar cor e exibir alerta
@@ -66,22 +66,19 @@ document.querySelectorAll('.faq-question').forEach(button => {
 });
 
 //Função de troca de página
-        document.addEventListener("DOMContentLoaded", function () {
-            const links = document.querySelectorAll(".botao-comprar");
-    
-            links.forEach(link => {
-                link.addEventListener("click", function (e) {
-                    e.preventDefault(); // Impede o carregamento imediato
-                    const href = this.getAttribute("href"); // Obtém o destino do link
-                    
-                    document.body.classList.add("zoom-out"); // Ativa o efeito de saída
-    
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 500); // Espera a animação antes de mudar a página
-                });
-            });
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".botao-comprar");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Impede o carregamento imediato
+            const href = this.getAttribute("href"); // Obtém o destino do link
+
+            document.body.classList.add("zoom-out"); // Ativa o efeito de saída
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500); // Espera a animação antes de mudar a página
         });
-
-
-
+    });
+});
