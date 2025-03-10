@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexozil - Saúde Articular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra fixa de urgência -->
+    <div id="barra-urgencia">
+        ⏳ Oferta termina em: <span id="contador">10:00</span>
+        <span id="estoque-alerta" class="hidden">⚠️ Poucas unidades restantes! Aproveite agora!</span>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">FLEXOZIL</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a onclick="scrollToSection('sobre')">Sobre</a></li>
+                    <li><a onclick="scrollToSection('ingredientes')">Ingredientes</a></li>
+                    <li><a onclick="scrollToSection('faq')">FAQ</a></li>
+                    <li><a onclick="scrollToSection('comprar')" class="h-cta-button">Comprar Agora</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar top"></div>
+                <div class="bar middle"></div>
+                <div class="bar bottom"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="produto-destaque">
+        <!-- <div class="container"> -->
+        <div class="produto-conteudo">
+            <div class="produto-imagem">
+                <img src="img/flexozil.png" alt="Flexozil - Suplemento para Saúde Articular">
+            </div>
+            <div class="produto-texto">
+                <h1><span>Recupere sua Liberdade!</span><br> Adeus às dores articulares com Flexozil</h1>
+                <p>Fórmula avançada para mobilidade, conforto e qualidade de vida. Experimente a revolução no cuidado
+                    das articulações!</p>
+                <button class="cta-button">Compre Agora</button>
+            </div>
+        </div>
+        <!-- </div> -->
+    </main>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-conteudo">
+            <div class="sobre-descricao">
+                <h2>É por isso que criamos<br><strong>FLEXOZIL</strong></h2>
+                <p>O Flexozil é um suplemento alimentar avançado, projetado para auxiliar na redução de dores e
+                    inflamações articulares. Sua fórmula inovadora é composta por 95% de extrato concentrado de cúrcuma,
+                    reconhecida por suas poderosas propriedades anti-inflamatórias naturais, que promovem saúde
+                    articular e aumento significativo do bem-estar geral.</p>
+            </div>
+            <div class="sobre-img">
+                <img src="img/flexozil.png" alt="Flexozil - Suplemento para Saúde Articular">
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="beneficios">
+        <div class="produto-beneficios">
+            <div class="paragrafos">
+                <h2><strong>Beneficios</strong></h2>
+                <div class="paragrafo">
+                    <p><strong> Redução de Dores Crônicas:</strong> <br>Graças ao extrato de cúrcuma concentrado, o
+                        Flexozil alivia rapidamente dores persistentes nas articulações.</p>
+                </div>
+                <div class="paragrafo">
+                    <p><strong> Melhora da Mobilidade: </strong> <br>O Colágeno Tipo 2 melhora a saúde das cartilagens,
+                        facilitando os movimentos e reduzindo desconfortos.</p>
+                </div>
+                <div class="paragrafo">
+                    <p><strong> Absorção Otimizada: </strong> <br>A forma sublingual garante absorção rápida e
+                        resultados eficazes em menor tempo.</p>
+                </div>
+                <div class="paragrafo">
+                    <p><strong> Articulações Saudáveis: </strong> <br>Condroitina e MSM proporcionam hidratação e
+                        elasticidade, essenciais para o conforto articular.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredientes -->
+    <section id="ingredientes" class="ingredientes">
+        <h2><strong>Ingredientes</strong></h2>
+        <div class="div-ingredientes">
+            <div class="produto-imagem">
+                <img src="img/supplement.png" alt="Flexozil - Suplemento para Saúde Articular">
+            </div>
+            <ul>
+                <li><img src="img/check.png" alt="✔"> <strong> Extrato de Cúrcuma Concentrado (95%)</strong></li>
+                <li><img src="img/check.png" alt="✔"> <strong> Colágeno Tipo 2 (UCII)</strong></li>
+                <li><img src="img/check.png" alt="✔"> <strong> Vitamina D3</strong></li>
+                <li><img src="img/check.png" alt="✔"> <strong> Vitamina K2</strong></li>
+                <li><img src="img/check.png" alt="✔"> <strong> Condroitina</strong></li>
+                <li><img src="img/check.png" alt="✔"> <strong> Enxofre Orgânico (MSM)</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Banner de Frete Grátis -->
+    <section class="frete">
+        <div class="banner-frete">
+            <div class="div-frete">
+                <div class="produto-imagem">
+                    <img src="img/frete.png" alt="Flexozil - Suplemento para Saúde Articular">
+                </div>
+                <ul>
+                    <h2>Cada pedido de 12 garrafas <br>
+                        <strong><u>também ganha frete GRÁTIS!</u></strong>
+                    </h2>
+                    <li>*97% dos clientes pedem 12 garrafas (nossa opção recomendada)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="depoimentos">
+        <h2>Usuários Reais de Flexozil. <br> Resultados Reais que Mudam a Vida.</h2>
+
+        <div class="depoimento">
+            <img class="foto-cliente" src="img/carla.png" alt="Carla M.">
+            <div class="depoimento-texto">
+                <strong class="destaque">Minhas dores diminuíram consideravelmente...</strong>
+                <div class="avaliacao">
+                    <img class="estrelas" src="img/estrelas.png" alt="5 estrelas">
+                    <span>Compra verificada</span>
+                </div>
+                <p>"Excelente produto! Minhas dores articulares diminuíram consideravelmente já no primeiro mês."</p>
+                <strong class="nome">- Carla M.</strong>
+            </div>
+        </div>
+
+        <div class="depoimento">
+            <img class="foto-cliente" src="img/ricardo.png" alt="Ricardo F.">
+            <div class="depoimento-texto">
+                <strong class="destaque">Voltei a caminhar sem desconforto...</strong>
+                <div class="avaliacao">
+                    <img class="estrelas" src="img/estrelas.png" alt="5 estrelas">
+                    <span>Compra verificada</span>
+                </div>
+                <p>"Fiquei surpreso com os resultados. Voltei a caminhar sem desconfortos após anos sofrendo com
+                    inflamações."</p>
+                <strong class="nome">- Ricardo F.</strong>
+            </div>
+        </div>
+
+        <div class="depoimento">
+            <img class="foto-cliente" src="img/sonia.png" alt="Sônia R.">
+            <div class="depoimento-texto">
+                <strong class="destaque">Mais disposição para o dia a dia...</strong>
+                <div class="avaliacao">
+                    <img class="estrelas" src="img/estrelas.png" alt="5 estrelas">
+                    <span>Compra verificada</span>
+                </div>
+                <p>"Recomendo demais o Flexozil. Além de reduzir minhas dores, trouxe mais disposição para meu dia a
+                    dia."</p>
+                <strong class="nome">- Sônia R.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Desconto -->
+    <section id="comprar" class="desconto">
+        <h2>Pegue seu Flexozil com <u>DESCONTO</u> <br> abaixo enquanto durarem os estoques!</h2>
+    </section>
+
+    <!-- Seção de Ofertas -->
+    <section class="ofertas">
+        <!-- Oferta 1 Frasco -->
+        <div class="oferta">
+            <h3>1x Frasco Flexozil</h3>
+            <p class="descricao">· Fornecimento para 30 dias ·</p>
+            <img src="img/flexozil.png" alt="1 Frasco Flexozil">
+            <p>&#9662</p>
+            <p class="preco">R$ 79,90</p>
+            <p class="parcelado">ou 12x de R$ 9,83</p>
+            <a href="obrigado.html" class="botao-comprar">COMPRAR AGORA</a>
+            <div class="pagamento">
+                <img src="img/cartoes.png" alt="Formas de pagamento" class="cartoes">
+            </div>
+        </div>
+
+        <!-- Oferta 3 Frascos -->
+        <div class="oferta">
+            <h3>3x Frascos Flexozil</h3>
+            <p class="descricao">· Fornecimento para 90 dias ·</p>
+            <img src="img/flexozil-3.png" alt="3 Frascos Flexozil">
+            <p class="preco-antigo">R$ 239,70</p>
+            <p class="preco">R$ 215,70</p>
+            <p class="parcelado">ou 12x de R$ 23,90</p>
+            <a href="obrigado.html" class="botao-comprar">COMPRAR AGORA</a>
+            <div class="pagamento">
+                <img src="img/cartoes.png" alt="Formas de pagamento" class="cartoes">
+            </div>
+        </div>
+
+        <!-- Oferta 6 Frascos -->
+        <div class="oferta">
+            <h3>6x Frascos Flexozil</h3>
+            <p class="descricao">· Fornecimento para 180 dias ·</p>
+            <img src="img/flexozil-6.png" alt="6 Frascos Flexozil">
+            <p class="preco-antigo">R$ 479,40</p>
+            <p class="preco">R$ 407,50</p>
+            <p class="parcelado">ou 12x de R$ 45,16</p>
+            <a href="obrigado.html" class="botao-comprar">COMPRAR AGORA</a>
+            <div class="pagamento">
+                <img src="img/cartoes.png" alt="Formas de pagamento" class="cartoes">
+            </div>
+        </div>
+
+        <!-- Oferta 12 Frascos (Destaque) -->
+        <div class="oferta oferta-em-destaque">
+            <span class="melhor-oferta">Melhor Oferta!</span>
+            <h3>12x Frascos Flexozil</h3>
+            <p class="descricao">· Fornecimento para 1 ano ·</p>
+            <img src="img/flexozil-12.png" alt="12 Frascos Flexozil">
+            <p class="preco-antigo">R$ 959,00</p>
+            <p class="preco">R$ 767,00</p>
+            <p class="parcelado">ou 12x de R$ 84,99</p>
+            <a href="obrigado.html" class="botao-comprar botao-destaque">
+                COMPRAR AGORA <img src="img/mao-clicando.png" alt="Mão clicando">
+            </a>
+            <div class="pagamento">
+                <img src="img/cartoes.png" alt="Formas de pagamento">
+                <p class="parcelado">*Frete GRÁTIS</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Avaliações -->
+    <section class="avaliacoes-oferta">
+        <h3>Nossos clientes dizem</h3>
+        <img src="img/estrelas.png" alt="5 Estrelas">
+        <p>com base em <strong>6.471 avaliações!</strong></p>
+    </section>
+
+    <!-- Garantia -->
+    <section class="ingredientes">
+        <div class="div-ingredientes">
+            <div class="produto-imagem">
+                <img src="img/garantia-90d.png" alt="Flexozil - Suplemento para Saúde Articular">
+            </div>
+            <ul>
+                <h2><strong>GARANTIA DE 90 DIAS!</strong></h2>
+                <li><strong> O Flexozil oferece uma garantia incondicional de 90 dias. Caso não fique satisfeito com os
+                        resultados, garantimos a devolução total do seu dinheiro.</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-item">
+            <button class="faq-question">Como e por que o Flexozil funciona? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">
+                <p>Flexozil contém ingredientes naturais que ajudam a reduzir inflamações e fortalecer as articulações.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Flexozil é o suplemento certo para mim? <span
+                    class="arrow">&#9662;</span></button>
+            <div class="faq-answer">
+                <p>Se você busca alívio para dores articulares e melhora na mobilidade, sim!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quando e como devo tomar Flexozil? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">
+                <p>Recomenda-se tomar duas cápsulas ao dia com um copo de água.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">O Flexozil é seguro? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">
+                <p>Sim, Flexozil é 100% natural, livre de substâncias artificiais, glúten, lactose e açúcares.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">O produto tem efeitos colaterais? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">
+                <p>Flexozil é 100% natural e não possui efeitos colaterais conhecidos.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">E se o produto não funcionar para mim?<span
+                    class="arrow">&#9662;</span></button>
+            <div class="faq-answer">
+                <p>Oferecemos uma Garantia de Satisfação, e nossa equipe de suporte está à disposição para ajudar.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Flexozil. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

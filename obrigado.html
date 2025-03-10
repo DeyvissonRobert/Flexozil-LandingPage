@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Realizada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="frete">
+        <div class="banner-frete banner-frete-2">
+            <div class="div-frete">
+                <div class="produto-imagem">
+                    <img src="img/aprovado.png" alt="Flexozil - Suplemento para Saúde Articular">
+                </div>
+                <ul>
+                    <h2>COMPRA REALIZADA COM SUCESSO!<br>
+                        <strong>Obrigado pela Preferencia</strong>
+                    </h2>
+                    <li>*Seu pedido será enviado em breve!</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Flexozil. Todos os direitos reservados.</p>
+    </footer>
+
+    <style>
+        /* Oculta o conteúdo inicialmente */
+        body {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            padding-top: 0;
+            background: rgba(200, 1, 1, 1);
+        }
+
+        /* Quando a página carrega, ativa o efeito de zoom  */
+        body.loaded {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .frete {
+            background: rgb(115, 2, 2);
+            background: linear-gradient(180deg, rgba(115, 2, 2, 1) 0%, rgba(161, 2, 2, 1) 50%, rgba(200, 1, 1, 1) 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-frete h2 {
+            color: #fff;
+        }
+
+        .banner-frete h2 strong {
+            font-size: 1.4rem;
+            color: #eeeeee;
+        }
+
+        .banner-frete li {
+            color: #ececec;
+        }
+
+        .banner-frete-2 img {
+            max-width: 350px;
+        }
+
+        footer {
+            color: #5bf700;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("loaded");
+        });
+    </script>
+
+</body>
+
+</html>
