@@ -19,6 +19,33 @@
     font-family: Arial, sans-serif;
 }
 
+/* Scrollbar */
+body {
+    --sb-track-color: #232E33;
+    --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--cor-primaria);
+    border-radius: 12px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--cor-primaria) var(--sb-track-color);
+    }
+}
+
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -35,8 +62,7 @@ body {
     top: -1px;
     left: 0;
     width: 100%;
-    background-color: #ff4d4d;
-    /* Vermelho de urgência */
+    background-color: #fc3838;
     color: white;
     text-align: center;
     font-size: 16px;
@@ -48,10 +74,8 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Quando estiver abaixo de 5 minutos, a cor fica mais intensa */
 .urgencia-alta {
     background-color: #d90000;
-    /* Vermelho mais escuro */
 }
 
 /* Ocultar alerta inicialmente */
@@ -269,7 +293,7 @@ header .container {
 /* Beneficios */
 .beneficios {
     background-color: var(--cor-fundo2);
-    color: #fff533;
+    color: #ffcc00;
 }
 
 .produto-beneficios {
@@ -290,7 +314,7 @@ header .container {
 
 .paragrafo p strong {
     font-size: 1.2rem;
-    color: #f7e64d;
+    color: #f7cd25;
 }
 
 .paragrafo p {
@@ -329,7 +353,6 @@ header .container {
 
 .ingredientes ul {
     flex: 1;
-    /* Ocupa metade do espaço */
     list-style: none;
     padding: 0;
 }
@@ -337,14 +360,13 @@ header .container {
 .ingredientes li {
     display: flex;
     align-items: center;
-    padding: 10px 0;
     font-size: 1.1rem;
 }
 
 .ingredientes li img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
 }
 
 /* Banner de Frete Grátis */
@@ -500,7 +522,7 @@ header .container {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     transform: scale(1.1);
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .oferta h3 {
@@ -537,7 +559,7 @@ header .container {
 }
 
 .oferta img {
-    max-width: 80px;
+    max-width: 250px;
     margin: 10px auto;
 }
 
